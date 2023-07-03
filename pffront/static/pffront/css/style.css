@@ -1,0 +1,203 @@
+.selection {
+    border: 1px solid;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 3px;
+    background-color: rgb(25, 25, 25);
+}
+
+.selection-current-name {
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgb(40, 40, 40);
+}
+
+/* .selection-current-description {
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+} */
+
+.selection-option {
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.blocker {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-area {
+    display: flex;
+}
+
+.blocker-window {
+    height: 80%;
+    width: 60%;
+    margin: 5% auto 0 auto;
+    /* display: flex; */
+    border: solid 3px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.selections-window {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-window {
+    width: 35%;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.descriptions-window {
+    width: 60%;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.confirm-button {
+    background-color:rgb(74, 74, 74);
+    /* color: rgb(29, 29, 29); */
+    border: 2px black solid;
+    border-radius: 5px;
+    height: 5%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#feats-field {
+    /* display: flex; */
+    width: 40%;
+}
+
+#abilities-window {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.abilities-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-right: 10px; */
+    /* width: 30%; */
+}
+
+.abilities-header {
+    padding: 5px 0;
+}
+
+.abilities-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    /* width: 10%; */
+}
+
+.abilities-stat {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.abilities-stat-modifiable {
+    background-color: gray;
+
+}
+
+.abilities-stat-name {  
+    padding: 5px 0;
+}
+
+.abilities-stat:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.ability-active {
+    background-color: rgb(100, 100, 100);
+}
+
+#stats-field {
+    width: 60%;
+}
+
+.skills-area {
+    width: 35%;
+}
+.skill-row {
+    display: flex;
+    padding: 10px 0px;
+    border-bottom: 1px rgb(143, 143, 143) solid ;
+}
+
+
+.skill-name {
+    width: 10em;
+}
+
+.skill-proficiency-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-proficiency-box {
+    margin: 2px;
+    border: solid rgb(90, 90, 90) 2px;
+    width: 1em;
+    height: 1em;
+}
+
+.skill-proficiency-type {
+    width: 1em;
+    margin: 4px;
+    text-align: center;
+}
+
+.skill-proficient {
+    background-color: rgb(90, 90, 90);
+}
+
+.theme {
+    color: rgb(180, 180, 180);
+    background-color: rgb(33, 33, 33);
+    font-size: 22px;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    /* height: 50px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.header-option {
+    padding: 15px 10px;
+    margin: 0px 5px;
+}
+
+.header-active {
+    background-color: rgb(60, 60, 60);
+}
+
+.window-hidden {
+    display: none;
+}

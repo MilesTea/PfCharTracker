@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <script src="{% static 'pffront/js/main.js' %}" defer></script>
+    <link href="{%static 'pffront/css/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body class="theme">
+    <div class="header">
+        <div id="menu-main" class="header-option header-active">Развитие</div>
+        <div id="menu-skills" class="header-option">Навыки</div>
+        <div id="menu-inventory" class="header-option">Снаряжение</div>
+    </div>
+    <div id="window-main" class="main-area">
+        <div id="feats-field"></div>
+        <div id="stats-field">
+            <div id="abilities-window">
+                <div class="abilities-headers">
+                    {% comment %} <div class="abilities-header"></div> {% endcomment %}
+                </div>
+                <div class="abilities-stats"></div>
+                <div class="abilities-stats"></div>
+                <div class="abilities-stats"></div>
+                <div class="abilities-stats"></div>
+                <div class="abilities-stats"></div>
+                <div class="abilities-stats"></div>
+            </div>
+        </div>
+    </div>
+    <div id="window-skills" class="skills-area window-hidden"></div>
+    <div id="window-inventory" class="inventory-area window-hidden"></div>
+</body>
+</html>
